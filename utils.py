@@ -12,18 +12,16 @@ from googleapiclient.discovery import build
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def get_calendar_service():
-    try:
-        # 1. Convert the Streamlit Secret block into a standard Python Dictionary
-        google_secrets_dict = dict(st.secrets["gcp_service_account"])
+    google_secrets_dict = dict(st.secrets["gcp_service_account"])
+    
+    # FIX: Clean the private key for Google Calendar too!
+    if "private_key" in google_secrets_dict:
+        google_secrets_dict["private_key"] = google_secrets_dict["private_key"].replace("\\n", "\n")
         
-        # 2. Crucial change: use from_service_account_info instead of from_service_account_file
-        creds = service_account.Credentials.from_service_account_info(
-            google_secrets_dict, scopes=SCOPES
-        )
-        return build('calendar', 'v3', credentials=creds)
-    except KeyError:
-        st.error("Missing 'gcp_service_account' in Streamlit Secrets!")
-        return None
+    creds = service_account.Credentials.from_service_account_info(
+        google_secrets_dict, scopes=SCOPES
+    )
+    return build('calendar', 'v3', credentials=creds)
 
 def add_passegiata_to_calendar(title, passegiata_datetime, duration_minutes, description=""):
     try:
@@ -78,6 +76,8 @@ def translate_realtime(text, target_lang="Italiano"):
 def init_db():
     if not firebase_admin._apps:
         key_dict = st.secrets["firebase"]
+        if "private_key" in key_dict:
+            key_dict["private_key"] = key_dict["private_key"].replace("\\n", "\n")
         cred = credentials.Certificate(dict(key_dict))
         app = firebase_admin.initialize_app(cred)
     else:
