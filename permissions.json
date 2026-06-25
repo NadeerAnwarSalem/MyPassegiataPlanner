@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "passegiatecavallo",
+  "private_key_id": "15588fc9976980bcc75a99b93b44802ef3c3844f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3egHVg9kNaXfn\nH2SHKYrTfLBx5XlP3paqpsLCeBzEUXAaEUJZsVaplNZ0jJE8KsZU30PW9+/+RuNZ\nZVk6oE06HB2olYks3EAUPwxFSJcaBjhdOiFTCEDxP8V02hrFEjix+17NxiiFSCYB\n2d5Ld4L6EXNgMdNyuNPo7AAcoU3ykm/lHN2vRYn9F71h4a+pov0WuK9o3DT+ARpw\n/0aCcR/iiU9Wbw0GqdSuhaD5jknyCKoJm13+zd2Vd0lzYg8tBIbsy6tnJzEaI1y4\nehW05Quftxp3VExpOcGacIJ7lzZDDv6cOHlL5JnwYO4lEy6mjCWvtuW5g4XrEkdV\nB2arqxrZAgMBAAECggEAAQtqqIGrShBiSIB1IPBffBgDBKj87XOb2b2gkP0gU81P\nZTSZMzvHXaiNZoU42/X14lyRjS8k8IaMi5EgRo1MV0L6979fNDBOVJctzZSt2I31\nwvEeaLO8s+rsJ7/IpHvXswq2ddc1mpmoLr1D7tvPtPcFuEPcW3Q6L6KtVvxjnliM\n3lxx9WDVZ87OxCmjmLGTypIBcpMSxlrRDBXrJFsP6yd/uw+9WBd81eSYDum7n/rT\nvjTwZsg0HPOnXOgoySWl8MGtrD2kWQqJFj6iVxvRaqMx1VEq9aFVxG9zdB9gdGA+\nwJvuHsN2se+fTSxY1mJzVv+GiiAqiEsFmzEE/mxTYQKBgQDi5HbXu5yzDiBHUQB0\nymLbm53JJA73bWoY6Azdk/DpHe1C33wsWusnfwi0dsFqx1+v+PC98phbzmWkvRbt\nleGuS1szesYfgycJuiBnEG+mPMPBcvNQG93VlPzStBGoMSF7fYXkwLCTPe9/cXc6\nMSt1Orv0IpEevZ4HN7bx9QOLOQKBgQDPA7E116wTTHj/OE9BrSHIA/MCAC17tLgB\nhCrxRt4FZFryx8HM+bt3qoTu6FB9mEwHgalvnKVpqFrBDsjl3Hotg8UUEN6QTmzX\nj6a5Xhxbje1HV5FAXUfAnJYnSAYlLll8BBJkCoCj4dLH8uKzjJfaFjg83u6FZNG2\n65JdmNjsoQKBgE2BQ4NwKBgWJDqYVfKPS/O+lcim06H7szls0zBBoBLR0UF9vBoe\nuKNWRq/2vR1vm6UuAXaxTxBVUe1TVmi0QVJblXzhXJpZH9W3yefK+oiryybi0HC2\nBDI4YaDMOBffKJPZjgpVNDwn9Q7wwIyVTUYPWTMNN8trdHb8tjayvpIpAoGAQS8M\nccPDbyA5SUPV0PxPEsgLkKm1qKoy9mdDjk2eQ1xiNugnYf+QxBFxYjjMf3+hEQwG\n6hoNC8PzL68UGyzdW8+OEs9tBUtsgkO9X8j+bOW3vSsZlYbJvSCRNzU6miKKEr7F\ne7LC5teIo2UbdSXj+svcUW5w9JfWYR60K7yhMYECgYBeNSE8kYsDx7Pf8vW61uTn\nYrY8aRJYgaPBIF5lDJncJhoqGnUmMb6zlBhx9NFRtAlLmTU9B2mkumdQ1IIvCfHc\ng1Ch6AfMYA65/CDbTspEsRq076bQlu4AsnGAvMTWFaW3zcu0rkfchxYNeHrLzRTk\nxZ49Pl0Rz8VEjmsR9wiOUA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@passegiatecavallo.iam.gserviceaccount.com",
+  "client_id": "118083089204431222213",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40passegiatecavallo.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
