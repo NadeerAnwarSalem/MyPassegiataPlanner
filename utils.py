@@ -10,7 +10,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
-SERVICE_ACCOUNT_FILE = 'google_credentials.json'
+SERVICE_ACCOUNT_FILE = st.secrets["gcp_service_account"]
 
 def get_calendar_service():
     credentials = service_account.Credentials.from_service_account_file(
