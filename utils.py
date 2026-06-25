@@ -75,7 +75,7 @@ def translate_realtime(text, target_lang="Italiano"):
 @st.cache_resource
 def init_db():
     if not firebase_admin._apps:
-        key_dict = st.secrets["firebase"]
+        key_dict = dict(st.secrets["firebase"])
         if "private_key" in key_dict:
             key_dict["private_key"] = key_dict["private_key"].replace("\\n", "\n")
         cred = credentials.Certificate(dict(key_dict))
