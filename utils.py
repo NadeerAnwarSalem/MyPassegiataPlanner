@@ -10,13 +10,20 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 SCOPES = ['https://www.googleapis.com/auth/calendar']
-SERVICE_ACCOUNT_FILE = dict(st.secrets["gcp_service_account"])
 
 def get_calendar_service():
-    credentials = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-    service = build('calendar', 'v3', credentials=credentials)
-    return service
+    try:
+        # 1. Convert the Streamlit Secret block into a standard Python Dictionary
+        google_secrets_dict = dict(st.secrets["gcp_service_account"])
+        
+        # 2. Crucial change: use from_service_account_info instead of from_service_account_file
+        creds = service_account.Credentials.from_service_account_info(
+            google_secrets_dict, scopes=SCOPES
+        )
+        return build('calendar', 'v3', credentials=creds)
+    except KeyError:
+        st.error("Missing 'gcp_service_account' in Streamlit Secrets!")
+        return None
 
 def add_passegiata_to_calendar(title, passegiata_datetime, duration_minutes, description=""):
     try:
