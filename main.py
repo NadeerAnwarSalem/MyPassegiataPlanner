@@ -8,6 +8,12 @@ import firebase_admin
 from firebase_admin import auth, credentials, firestore
 from utils import sidebar_auth, get_text, lang_picker , add_passegiata_to_calendar, get_calendar_service
 
+st.set_page_config(
+    page_title="Passeggiata Planner",  # Change this to whatever name you want
+    page_icon="🚶‍♂️",                  # Can be an emoji or a URL to a custom logo image
+    layout="centered"
+)
+
 # Initialize translations
 T = get_text()
 
